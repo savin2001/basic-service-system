@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Home page</title>
+		<link rel="stylesheet" href="../style.css" />
+		<style>
+			.file-area {
+				width: 100%;
+				position: relative;
+			}
+			.file-area input[type="file"] {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				opacity: 0;
+				cursor: pointer;
+			}
+			.file-area .file-dummy {
+				width: 100%;
+				padding: 30px;
+				background: rgba(255, 255, 255, 0.2);
+				border: 2px dashed rgba(255, 255, 255, 0.2);
+				text-align: center;
+				transition: background 0.3s ease-in-out;
+			}
+			.file-area .file-dummy .success {
+				display: none;
+			}
+			.file-area:hover .file-dummy {
+				background: rgba(255, 255, 255, 0.1);
+			}
+			.file-area input[type="file"]:focus + .file-dummy {
+				outline: 2px solid rgba(255, 255, 255, 0.5);
+				outline: -webkit-focus-ring-color auto 5px;
+			}
+			.file-area input[type="file"]:valid + .file-dummy .success {
+				display: inline-block;
+			}
+			.file-area input[type="file"]:valid + .file-dummy .default {
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="nav">
+			<div class="navbar section">
+				<section class="brand">
+					<a href="artisan_index.html">
+						<h1>Brand name</h1>
+					</a>
+				</section>
+				<section class="nav-menu">
+					<ul class="nav-items">
+						<a href="artisan_profile.html">
+							<li class="nav-link">Profile</li>
+						</a>
+						<a href="artisan_index.html">
+							<li class="nav-link">Home page</li>
+						</a>
+						<!-- <a href="#">
+							<li class="nav-link"></li>
+						</a> -->
+					</ul>
+				</section>
+			</div>
+		</nav>
+		<div class="section">
+			<!-- Upload work -->
+			<form action method="post">
+				<h2 style="padding: 1rem 0">
+					<strong>Upload predefined jobs</strong>
+				</h2>
+
+				<div class="form-group">
+					<label for="title" style="padding: 1rem 0">Category </label>
+					<br />
+					<input
+						type="text"
+						name="title"
+						id="title"
+						class="form-controll"
+						style="padding: 1rem 0"
+					/>
+				</div>
+				<div class="form-group">
+					<label for="title">Service offered</label>
+					<br />
+					<input
+						type="text"
+						name="title"
+						id="title"
+						class="form-controll"
+						style="padding: 1rem 0"
+					/>
+				</div>
+				<div class="form-group">
+					<label for="title">Price </label>
+					<br />
+					<input
+						type="text"
+						name="title"
+						id="title"
+						class="form-controll"
+						style="padding: 1rem 0"
+					/>
+				</div>
+				<div class="form-group">
+					<label for="title">Deposit </label>
+					<br />
+					<input
+						type="text"
+						name="title"
+						id="title"
+						class="form-controll"
+						style="padding: 1rem 0"
+					/>
+				</div>
+				<div class="form-group file-area">
+					<label for="images" style="padding: 1rem 0"
+						>Images
+						<span
+							>(Your images should be at least 400x300 wide)</span
+						></label
+					>
+					<input
+						type="file"
+						name="images"
+						id="images"
+						required="required"
+						multiple="multiple"
+						style="padding: 1rem 0"
+					/>
+					<div class="file-dummy">
+						<div class="success">
+							Great, your files are selected. Keep on.
+						</div>
+						<div class="default">Please select some files</div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<button type="submit">Upload images</button>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Payment</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link rel="stylesheet" href="../style.css" />
+	</head>
+	<body>
+		<nav class="nav">
+			<div class="navbar section">
+				<section class="brand">
+					<a href="../index.html">
+						<h1>Brand name</h1>
+					</a>
+				</section>
+				<section class="nav-menu">
+					<ul class="nav-items">
+						<a href="../skillDisplay.html">
+							<li class="nav-link">Back</li>
+						</a>
+					</ul>
+				</section>
+			</div>
+		</nav>
+		<div class="section">
+			<h2>Please fill in the details</h2>
+			<div class="details">
+				<input type="text" name="" id="" placeholder="First Name" />
+				<input type="text" name="" id="" placeholder="Second Name" />
+				<input type="email" name="" id="" placeholder="Contact email" />
+				<br />
+			</div>
+			<h2>Pay with</h2>
+			<div class="payment-modes">
+				<div class="paypal" style="padding: 1rem 0">
+					<h3 style="padding: 1rem 0">Paypal</h3>
+					<input
+						type="submit"
+						value="Continue to Paypal"
+						class="btn btn-primary"
+						style="border-radius: 20px; padding: 0.7rem 0.6rem"
+					/>
+				</div>
+				<br />
+				<div class="credit_card">
+					<div>
+						<h3 style="padding: 1rem 0">Credit card</h3>
+						<label for="fname" style="padding: 1rem 0"
+							>Accepted Cards
+						</label>
+					</div>
+					<div class="icon-container" style="padding: 1rem 0">
+						<i
+							class="fa fa-cc-visa fa-2x"
+							style="color: navy; padding: 0 1rem"
+						></i>
+						<i
+							class="fa fa-cc-amex fa-2x"
+							style="color: blue; padding: 0 1rem"
+						></i>
+						<i
+							class="fa fa-cc-mastercard fa-2x"
+							style="color: red; padding: 0 1rem"
+						></i>
+						<i
+							class="fa fa-cc-discover fa-2x"
+							style="color: orange; padding: 0 1rem"
+						></i>
+					</div>
+					<label for="cname" style="padding: 1rem 0"
+						>Name on Card</label
+					><br />
+					<input
+						type="text"
+						style="padding: 1rem 2rem"
+						id="cname"
+						name="cardname"
+						placeholder="John More Doe"
+					/><br />
+					<label for="ccnum" style="padding: 1rem 0"
+						>Credit card number</label
+					><br />
+					<input
+						type="text"
+						style="padding: 1rem 2rem"
+						id="ccnum"
+						name="cardnumber"
+						placeholder="1111-2222-3333-4444"
+					/><br />
+					<label for="expmonth" style="padding: 1rem 0"
+						>Exp Month</label
+					><br />
+					<input
+						type="text"
+						style="padding: 1rem 2rem"
+						id="expmonth"
+						name="expmonth"
+						placeholder="September"
+					/><br />
+					<div style="padding: 1rem 0">
+						<div>
+							<label for="expyear" style="padding: 1rem 0"
+								>Exp Year</label
+							><br />
+							<input
+								type="text"
+								style="padding: 1rem 2rem"
+								id="expyear"
+								name="expyear"
+								placeholder="2018"
+							/><br />
+						</div>
+						<div>
+							<label for="cvv" style="padding: 1rem 0">CVV</label
+							><br />
+							<input
+								type="text"
+								style="padding: 1rem 2rem"
+								id="cvv"
+								name="cvv"
+								placeholder="352"
+							/><br />
+						</div>
+					</div>
+				</div>
+				<div class="cryptocurrency">
+					<h3 style="padding: 1rem 0">Crypto-currency</h3>
+					<p style="padding: 1rem 0">Choose your currency</p>
+					<div style="padding: 1rem 2rem">
+						<span
+							class="badge rounded-pill bg-warning"
+							style="padding: 1rem 1rem"
+							><i class="fa fa-btc fa-2x" aria-hidden="true"></i
+						></span>
+						<span
+							class="badge rounded-pill bg-dark"
+							style="padding: 1rem 1rem"
+							><i class="fa fa-ethereum fa-2x">Eth</i></span
+						>
+						<span
+							class="badge rounded-pill bg-primary"
+							style="padding: 1rem 1rem"
+							><i class="fa fa-ethereum fa-2x">Ltc</i></span
+						>
+					</div>
+				</div>
+			</div>
+			<button type="submit">Pay</button>
+		</div>
+	</body>
+</html>
