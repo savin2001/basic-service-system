@@ -1,5 +1,7 @@
 # basic-service-system
 This is a service offering site that allows clients to obtain the services of skilled artisan and then pay them for their work just like upwork and fiverr. It is mostly frontend.
+Click the link to check out the site.
+https://savin2001.github.io/basic-service-system/
 ![127 0 0 1_5500_index html(Laptop with HiDPI screen)](https://user-images.githubusercontent.com/44639335/103585089-8d535400-4ef3-11eb-8f6a-70569658bb2d.png)
 landing page
 ![127 0 0 1_5500_client_transaction html(Laptop with HiDPI screen)](https://user-images.githubusercontent.com/44639335/103585107-96442580-4ef3-11eb-940d-b50bc94bf0c3.png)
